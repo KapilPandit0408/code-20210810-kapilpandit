@@ -78,7 +78,7 @@ const swaggerOptions = {
 
 /** 
  * @swagger
- * /api/People_BMI_details:
+ * /api/getBmiDetails:
  *  get:
  *    summary: Get people health Details API
  *    tags:
@@ -91,7 +91,7 @@ const swaggerOptions = {
 
 /** 
  * @swagger
- * /api/get_overweight_people_count:
+ * /api/getCount:
  *  get:
  *    summary: Get overweight people count API
  *    tags:
