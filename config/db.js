@@ -11,7 +11,7 @@ const connectDB = async () => {
         })
         console.log(`MongoDB Compass Connected Successfuly`.cyan.underline)
     } catch (err) {
-        console.log(`Error: ${err.message}`.red.italic)
+        res.status(500).json({message:err.message})
         process.exit(1)
     }
 } 

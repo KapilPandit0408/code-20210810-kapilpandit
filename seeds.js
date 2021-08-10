@@ -14,13 +14,13 @@ var data = [
 function seedDB () {
     User.deleteMany({}, (err) => {
         if(err) {
-            console.log(err);
+            res.status(500).json({message:err.message})
         }
         console.log(`Removed persons`.yellow.strikethrough);
     data.forEach((seed) => {
         User.create(seed, (err, state) => {
             if(err) {
-                console.log(err)
+                res.status(500).json({message:err.message})
             }
             else {
                 console.log(`Added New user`.blue.italic)
